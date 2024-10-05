@@ -1,0 +1,140 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Menu lateral */
+.menu {
+    background-color: #2c3e50;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu nav ul li {
+    margin-bottom: 10px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    background-color: #34495e;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu nav ul li a:hover {
+    background-color: #1abc9c;
+}
+
+/* Conteúdo principal */
+main {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilo para a seção de arrastar e soltar */
+.drag-drop-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.words, .definitions {
+    width: 45%;
+}
+
+.words h3, .definitions h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.draggable {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.draggable:hover {
+    background-color: #16a085;
+}
+
+.droppable {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px dashed #34495e;
+    border-radius: 5px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.droppable.over {
+    background-color: #bdc3c7;
+}
+
+/* Botão de submissão */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #e74c3c;
+}

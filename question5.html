@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Recovery</title>
+    <link rel="stylesheet" href="question5.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="menu">
+            <h2>Questions</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://violinistaestudante.github.io/questao1/"> 🎧 Question 1 - Listening</a></li>
+                    <li><a href="https://violinistaestudante.github.io/questao2/"> ✍ Question 2 - Word Search </a></li>
+                    <li><a href="https://violinistaestudante.github.io/questao3/"> 🔠 Question 3 - Multiple Choice </a></li>
+                    <li><a href="https://violinistaestudante.github.io/questao4/"> 📓 Question 4 - Fill Blanks </a></li>
+                    <li><a href="https://violinistaestudante.github.io/questao5/"> 👋 Question 5 - Drag and Drop </a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <header>
+                <h1>👋 Question 5 - Drag and Drop</h1>
+                <p>Arraste os blocos onde a convicção entre a palavra e a citação.</p>
+            </header>
+            
+            <section class="drag-drop-section">
+                <div class="words">
+                    <h3>Words</h3>
+                    <div class="draggable" draggable="true" id="word1">Rebellion</div>
+                    <div class="draggable" draggable="true" id="word2">Anthem</div>
+                    <div class="draggable" draggable="true" id="word3">Empowerment</div>
+                    <div class="draggable" draggable="true" id="word4">Stomping</div>
+                </div>
+
+                <div class="definitions">
+                    <h3>Definitions</h3>
+                    <div class="droppable" id="def1">A song of loyalty or devotion</div>
+                    <div class="droppable" id="def2">To walk heavily or noisily</div>
+                    <div class="droppable" id="def3">Rising against authority</div>
+                    <div class="droppable" id="def4">Gaining control or confidence</div>
+                </div>
+            </section>
+
+            <button onclick="checkAnswers()">Submit Answers</button>
+            <p id="feedback"></p>
+        </main>
+
+        <script src="question5.js"></script>
+    </div>
+</body>
+</html>
